@@ -1,0 +1,60 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "ноутбук ASUS",
+      "description": "Пойдёт",
+      "preview": "Product/ноут.jpg",
+      "category": "товары",
+      "purchase_price": 15000,
+      "date_creation": "2023-07-14",
+      "last_modified_date": "2023-07-14"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "смартфон",
+      "description": "не плохой",
+      "preview": "",
+      "category": "телефоны",
+      "purchase_price": 35000,
+      "date_creation": "2023-07-14",
+      "last_modified_date": "2023-07-14"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "name": "что-то там",
+      "description": "как-то там"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфоны",
+      "description": "Смартфон — это умный мобильный телефон. Устройство, с помощью которого можно звонить, отправлять письма."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "name": "Планшеты",
+      "description": "Планшетный компьютер — универсальное мобильное устройство, которое может использоваться разными людьми для различных целей."
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Автомобили",
+      "description": "Автомобили – это наземный транспорт. Они нужны для того, чтобы люди могли быстро передвигаться в нужные им места, перевозить пассажиров и грузы."
+    }
+  }
+]
