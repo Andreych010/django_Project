@@ -33,6 +33,7 @@ class Command(BaseCommand):
             {'name': 'Ноутбук', 'description': 'Asus', 'category': pk_3, 'purchase_price': '70000'},
             {'name': 'Роутер', 'description': 'Asus', 'category': pk_4, 'purchase_price': '3000'},
         ]
+
         product_create = []
         for product_item in product_list:
             product_create.append(Product(**product_item))
