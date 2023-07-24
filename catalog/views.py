@@ -2,6 +2,8 @@ from django.shortcuts import render
 from catalog.models import Product, Category
 
 
+# from lib2to3.fixes.fix_input import context
+
 def home(request):
     category_list = Category.objects.all()
     context = {
@@ -30,3 +32,21 @@ def products(request):
         'title': 'Товары'
     }
     return render(request, 'catalog/products.html', context)
+
+
+def product_card(request, pk):
+    product_list = Product.objects.get(pk=pk)
+    context = {
+        'object': Product.objects.get(id=pk),
+        'title': f'{product_list.name}'
+    }
+    return render(request, 'catalog/product_card.html', context)
+
+
+def category_card(request, pk):
+    product_list = Category.objects.get(pk=pk)
+    context = {
+        'object': Product.objects.get(id=pk),
+        'title': f'{product_list.name}'
+    }
+    return render(request, 'catalog/category_card.html', context)
